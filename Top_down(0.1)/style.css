@@ -1,0 +1,29 @@
+.mapa{
+    height: 1350px;
+    width: 2535px;
+    background-image: url(mapa.jpg);
+    z-index: 1;
+    position: absolute;
+    background-repeat: no-repeat;
+
+}
+.obstaculos{
+    height: 1350px;
+    width: 2535px;
+    background-image: url(obstáculos2.0.png);
+    z-index: 3;
+    position: absolute;
+    background-repeat: no-repeat;
+
+}
+
+.squirtle{
+    height: 50px;
+    width: 50px;
+    background-image: url(squirtle.gif);
+    position: absolute;
+    z-index: 2;
+    top: 330px;
+    left:70px;
+}
+
