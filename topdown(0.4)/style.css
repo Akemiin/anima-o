@@ -1,0 +1,74 @@
+.mapa{
+    height: 1350px;
+    width: 2535px;
+    background-image: url(imgs/mapa.jpg);
+    z-index: 1;
+    position: absolute;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+}
+.obstaculos{
+    height: 1350px;
+    width: 2535px;
+    background-image: url(imgs/obst.png);
+    z-index: 3;
+    position: absolute;
+    background-repeat: no-repeat;
+
+}
+
+.kirby{
+    height: 16px;
+    width: 16px;
+    background-image: url(imgs/kirby\(png\).png);
+    position: absolute;
+    z-index: 2;
+    top: 330px;
+    left:70px;
+}
+
+.movimento{
+    height: 16px;
+    width: 16px;
+    background-color:rgb(255, 230, 0) ;
+    position: relative;
+
+    top: 21rem; 
+    left: 00rem;
+
+    animation:
+        mov-01 linear forwards 1s ,        
+        mov-02 linear forwards 1s 1s,
+        mov-03 linear forwards 1s 2s,
+        mov-04 linear forwards 1s 3s,
+        mov-05 linear forwards 1s 4s,
+        mov-06 linear forwards 1s 5s,
+        mov-07 linear forwards 1s 6s,
+        mov-08 linear forwards 1s 7s,
+        mov-09 linear forwards 1s 8s,
+        mov-10 linear forwards 1s 9s,
+        mov-11 linear forwards 1s 10s,
+        mov-12 linear forwards 1s 11s,
+        mov-13 linear forwards 1s 12s,
+        mov-14 linear forwards 1s 13s,
+        mov-15 linear forwards 1s 14s,
+        mov-16 linear forwards 1s 15s;
+}
+
+@keyframes mov-01{to {top: 22rem; left: 04rem;}}
+@keyframes mov-02{to {top: 22rem; left: 08rem;}}
+@keyframes mov-03{to {top: 17rem; left: 08rem;}}
+@keyframes mov-04{to {top: 09rem; left: 08rem;}}
+@keyframes mov-05{to {top: 09rem; left: 15rem;}}
+@keyframes mov-06{to {top: 12rem; left: 15rem;}}
+@keyframes mov-07{to {top: 12rem; left: 21rem;}}
+@keyframes mov-08{to {top: 13.7rem; left: 21rem;}}
+@keyframes mov-09{to {top: 13.7rem; left: 45rem;}}
+@keyframes mov-10{to {top: 09rem; left: 45rem;}}
+@keyframes mov-11{to {top: 09rem; left: 48.2rem;}}
+@keyframes mov-12{to {top: 14rem; left: 48.2rem;}}
+@keyframes mov-13{to {top: 14rem; left: 30rem;}}
+@keyframes mov-14{to {top: 19rem; left: 30rem;}}
+@keyframes mov-15{to {top: 19rem; left: 26rem;}}
+@keyframes mov-16{to {top: 28rem; left: 26rem;}}
