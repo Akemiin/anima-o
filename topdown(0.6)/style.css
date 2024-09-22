@@ -1,0 +1,120 @@
+.mapa{
+    height: 1350px;
+    width: 2535px;
+    background-image: url(imgs/mapa.jpg);
+    z-index: 1;
+    position: absolute;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+}
+.obstaculos{
+    height: 1350px;
+    width: 2535px;
+    background-image: url(imgs/obst.png);
+    z-index: 3;
+    position: absolute;
+    background-repeat: no-repeat;
+
+}
+
+
+.movimento{
+    height: 16px;
+    width: 16px;
+    background-color:rgb(255, 230, 0) ;
+    position: relative;
+
+    top: 21rem; 
+    left: 00rem;
+
+    animation:
+        mov-01 linear forwards 1.031s	,
+        mov-02 linear forwards 1.000s	1.031s,
+        mov-03 linear forwards 1.250s	2.031s,
+        mov-04 linear forwards 2.000s	3.281s,
+        mov-05 linear forwards 1.750s	5.281s,
+        mov-06 linear forwards 0.750s	7.031s,
+        mov-07 linear forwards 1.500s	7.781s,
+        mov-08 linear forwards 0.425s	9.281s,
+        mov-09 linear forwards 3.000s	9.706s,
+        mov-10 linear forwards 1.175s	12.706s,
+        mov-11 linear forwards 0.800s	13.881s,
+        mov-12 linear forwards 1.250s	14.681s,
+        mov-13 linear forwards 4.550s	15.931s,
+        mov-14 linear forwards 1.250s	20.481s,
+        mov-15 linear forwards 1.000s	21.731s,
+        mov-16 linear forwards 2.250s	22.731s;
+}
+       
+@keyframes mov-01{to {top: 22rem; left: 04rem;}}
+@keyframes mov-02{to {top: 22rem; left: 08rem;}}
+@keyframes mov-03{to {top: 17rem; left: 08rem;}}
+@keyframes mov-04{to {top: 09rem; left: 08rem;}}
+@keyframes mov-05{to {top: 09rem; left: 15rem;}}
+@keyframes mov-06{to {top: 12rem; left: 15rem;}}
+@keyframes mov-07{to {top: 12rem; left: 21rem;}}
+@keyframes mov-08{to {top: 13.7rem; left: 21rem;}}
+@keyframes mov-09{to {top: 13.7rem; left: 45rem;}}
+@keyframes mov-10{to {top: 09rem; left: 45rem;}}
+@keyframes mov-11{to {top: 09rem; left: 48.2rem;}}
+@keyframes mov-12{to {top: 14rem; left: 48.2rem;}}
+@keyframes mov-13{to {top: 14rem; left: 30rem;}}
+@keyframes mov-14{to {top: 19rem; left: 30rem;}}
+@keyframes mov-15{to {top: 19rem; left: 26rem;}}
+@keyframes mov-16{to {top: 28rem; left: 26rem;}}
+
+.kirby{
+    height: 30px;
+    width: 28px;
+    background-image: url(imgs/kirby\(png03\).png);
+    position: absolute;
+    z-index: 2;
+
+    background-position: -4px -161px;
+
+    animation:
+    giro steps(9) 1.031s 0s 1.031,
+    andarl steps(10) 1s 1.031s 1,
+    subir steps(10) 1.25s 2.031s 1.25,
+    subir2 steps(10) 2s 3.281s 2
+    ;
+
+}
+
+@keyframes giro{
+    from{
+        background-position: -4px -157px
+    }
+    to {
+        background-position: -291px -157px;
+    }
+}
+
+@keyframes andarl{
+    from{
+        background-position: -4px -44px
+    }
+    to {
+        background-position: -256px -44px;
+    }
+}
+
+@keyframes subir{
+    from{
+        background-position: -5px -232px
+    }
+    to {
+        background-position: -292px -232px;
+    }
+}
+
+@keyframes subir2{
+    from{
+        background-position: -5px -232px
+    }
+    to {
+        background-position: -292px -232px;
+    }
+}
+
